@@ -111,3 +111,8 @@ Example Docker commands (handled by Jenkins):
 docker build -t abhishek365/ekart .
 docker push abhishek365/ekart
 docker run -d -p 8070:8080 abhishek365/ekart
+```
+## Screenshots
+![Example Image](screenshots/1.png) <br>
+![Example Image](screenshots/2.png) <br>
+![Example Image](screenshots/3.png) <br>
