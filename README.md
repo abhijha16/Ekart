@@ -12,7 +12,6 @@ The core objective was to go beyond just building a Java web application — the
     - CI_Pipeline: Handles code checkout, static code analysis with SonarQube, security vulnerability scanning with OWASP Dependency Check,           builds the application using Maven, creates a Docker image, and pushes it to DockerHub.
 
     - CD_Pipeline: Automatically triggered by CI_Pipeline, pulls the Docker image and runs the application inside a Docker container exposed on       port 8070.
----
 
 ## 📌 Table of Contents
 
@@ -28,8 +27,6 @@ The core objective was to go beyond just building a Java web application — the
 - [📷 Screenshots (optional)](#-screenshots-optional)
 - [📎 Conclusion](#-conclusion)
 
----
-
 ##  🔧 Tech Stack
 
 - **Backend:** Spring Boot, Spring Security, Spring Data JPA, Spring Data REST
@@ -41,15 +38,15 @@ The core objective was to go beyond just building a Java web application — the
   - OWASP Dependency Check (Vulnerability Detection)  
   - Docker & Docker Hub (Containerization & Registry)
 
-### Maven Wrapper
+## 📁 Project Structure
 
-#### Using the Maven Plugin
+The project source code is available at:  
+➡️ [GitHub Repository](https://github.com/abhijha16/Ekart.git)
 
-Go to the root folder of the application and type:
-```bash
-$ chmod +x scripts/mvnw
-$ scripts/mvnw spring-boot:run
-```
+It contains:
+- Full Spring Boot application with security & persistence.
+- A valid `Dockerfile` for containerization.
+- Jenkinsfile used in both CI & CD jobs for full automation.
 
 #### Using Executable Jar
 
