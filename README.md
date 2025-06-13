@@ -26,6 +26,7 @@ The core objective was to go beyond just building a Java web application — the
 - [📌 Final Deployment](#-final-deployment)
 - [📷 Screenshots (optional)](#-screenshots-optional)
 - [📎 Conclusion](#-conclusion)
+- [🙌 Credits](#-credits)
 
 ##  🔧 Tech Stack
 
@@ -112,7 +113,33 @@ docker build -t abhishek365/ekart .
 docker push abhishek365/ekart
 docker run -d -p 8070:8080 abhishek365/ekart
 ```
+## Reports & Artifacts
+
+- **OWASP Dependency Report:**
+  - Auto-generated and archived inside Jenkins. Viewable from the Jenkins UI post-build.
+- **SonarQube Dashboard:
+  - Displays quality gate results, code smells, bugs, vulnerabilities, and duplications.
+
+## 📌 Final Deployment
+
+Once CI and CD jobs are triggered:
+- The application is deployed in a Docker container.
+- It runs automatically on port 8070.
+- Ensures every code change is tested, analyzed, containerized, and deployed with zero manual intervention.
+
 ## Screenshots
 ![Example Image](screenshots/1.png) <br>
 ![Example Image](screenshots/2.png) <br>
 ![Example Image](screenshots/3.png) <br>
+
+## Conclusion
+
+This project demonstrates how to build a production-like CI/CD setup using Jenkins that:
+- Ensures quality and security from the very beginning.
+- Automates every step from development to deployment.
+- Uses real-world DevOps practices that are valuable in industry setups.
+
+## 🙌 Credits
+
+The original project was forked from [jaiswaladi246/Ekart](https://github.com/jaiswaladi246/Ekart.git)
+Automation (CI/CD using Jenkins, SonarQube, Docker, and deployment) was implemented by [Abhishek Jha](https://github.com/abhijha16/Ekart.git)
