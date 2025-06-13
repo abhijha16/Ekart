@@ -1,39 +1,32 @@
-# Spring Boot Shopping Cart Web App
+#  🚀 Ekart Web Application – CI/CD Automated using Jenkins
 
 ## About
 
-This is a demo project for practicing Spring + Thymeleaf. The idea was to build some basic shopping cart web app.
+This project showcases a fully automated CI/CD pipeline setup using Jenkins, applied to a Spring Boot-based shopping cart web application.
 
-It was made using **Spring Boot**, **Spring Security**, **Thymeleaf**, **Spring Data JPA**, **Spring Data REST and Docker**. 
-Database is in memory **H2**.
+The core objective was to go beyond just building a Java web application — the focus here was to **implement complete automation** from code analysis to containerized deployment using modern DevOps practices.
 
-There is a login and registration functionality included.
+💡 What This Project Demonstrates:
+- Two Jenkins jobs:
 
-Users can shop for products. Each user has his own shopping cart (session functionality).
-Checkout is transactional.
+    - CI_Pipeline: Handles code checkout, static code analysis with SonarQube, security vulnerability scanning with OWASP Dependency Check,           builds the application using Maven, creates a Docker image, and pushes it to DockerHub.
 
-## Configuration
+    - CD_Pipeline: Automatically triggered by CI_Pipeline, pulls the Docker image and runs the application inside a Docker container exposed on       port 8070.
 
-### Configuration Files
+## 📌 Table of Contents
 
-Folder **src/resources/** contains config files for **shopping-cart** Spring Boot application.
+- [🔧 Tech Stack](#-tech-stack)
 
-* **src/resources/application.properties** - main configuration file. Here it is possible to change admin username/password,
-as well as change the port number.
+##  🔧 Tech Stack
 
-## How to run
-
-There are several ways to run the application. You can run it from the command line with included Maven Wrapper, Maven or Docker. 
-
-Once the app starts, go to the web browser and visit `http://localhost:8070/home`
-
-Admin username: **admin**
-
-Admin password: **admin**
-
-User username: **user**
-
-User password: **password**
+- **Backend:** Spring Boot, Spring Security, Spring Data JPA, Spring Data REST
+- **Frontend:** Thymeleaf
+- **Database:** H2 In-Memory Database
+- **DevOps & Tools:**  
+  - Jenkins (Declarative Pipelines)  
+  - SonarQube (Code Quality Analysis)  
+  - OWASP Dependency Check (Vulnerability Detection)  
+  - Docker & Docker Hub (Containerization & Registry)
 
 ### Maven Wrapper
 
