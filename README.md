@@ -12,10 +12,23 @@ The core objective was to go beyond just building a Java web application — the
     - CI_Pipeline: Handles code checkout, static code analysis with SonarQube, security vulnerability scanning with OWASP Dependency Check,           builds the application using Maven, creates a Docker image, and pushes it to DockerHub.
 
     - CD_Pipeline: Automatically triggered by CI_Pipeline, pulls the Docker image and runs the application inside a Docker container exposed on       port 8070.
+---
 
 ## 📌 Table of Contents
 
 - [🔧 Tech Stack](#-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [⚙️ CI/CD Workflow](#️-cicd-workflow)
+  - [CI Pipeline](#ci-pipeline-job)
+  - [CD Pipeline](#cd-pipeline-job)
+- [🔒 Security & Analysis](#-security--code-analysis)
+- [🐳 Dockerization](#-dockerization)
+- [📊 Reports & Artifacts](#-reports--artifacts)
+- [📌 Final Deployment](#-final-deployment)
+- [📷 Screenshots (optional)](#-screenshots-optional)
+- [📎 Conclusion](#-conclusion)
+
+---
 
 ##  🔧 Tech Stack
 
